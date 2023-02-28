@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace laba_3
 {
@@ -73,18 +73,24 @@ namespace laba_3
         }
         static void Main(string[] args)
         {
-           
             Console.WriteLine("введите день недели от 1 до 7:");
             int days = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("введите данные по типу: утро, день, вечер и ночь");
             int sutki = Convert.ToInt32(Console.ReadLine());
 
+            if (days <= 7){
+                Console.WriteLine("информация:");
 
-            Console.WriteLine(" sdkrolksdo ");
-
-            dayr(days);
-            sutkir(sutki);
+                dayr(days);
+                sutkir(sutki);
+            }
+            else
+            {
+                Console.WriteLine("Ошибка");
+            }
+           
+            
         }
     }
 }
